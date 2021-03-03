@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        All the Input Types
+    </title>
+
+<body>
+    <h1>
+        <p style="color: red">All Input Types</p>
+    </h1>
+
+    <br><br>
+
+    <form>
+        <label for="username">Enter Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="username" required><br><br>
+
+        <label for="email">Enter Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter email" required><br><br>
+        
+        <label for="password">EnterPassword:</label><br>
+        <input type="password" id="password" name="[password]" placeholder="Enter Password" required><br><br>
+
+        <p>Select your age:  
+
+            <input type="radio" name="Age" value="0-25" id="opt-1" required>
+            <label for="opt-1">0-25</label>
+            <input type="radio" name="Age" value="26-50" id="opt-2">
+            <label for="opt-2">26-50</label>
+            <input type="radio" name="Age" value="51-and-above" id="opt-3">
+            <label for="opt-3">51-and-above</label>
+        </p>
+
+            <label for="question">Security Question:</label>
+            <select name="question" id="question">
+                <option value="q1?">Where were you born?</option>
+                <option value="q2?">What city did you first buy a car in?</option>
+                <option value="q3?">Where did you get married?</option>            
+            </select>
+
+            <br><br>
+
+            <label for="answer">Security Question Answer:</label>
+            <input type="text" id="answer" name="answer" required>
+
+            <br><br>
+
+            <!--Adding this separator comment.
+            
+            Text below is going to be for the example of a box which has like a 140 character input from the user.
+            (Maybe a bad example would be a comment for a review?)
+            
+            -->
+
+            <label for="bio">Add something to your bio:  </label>
+            <textarea name="bio" id="bio" cols="10" rows="1" placeholder="About You..."></textarea>
+
+            <p>What vehicles do you have?  
+
+                <input type="checkbox" name="Age" value="I have a car" id="opt-1">
+                <label for="opt-1">I have a car</label>
+                <input type="checkbox" name="Age" value="I have a motor cycle" id="opt-2">
+                <label for="opt-2">I have a motor cycle</label>
+                <input type="checkbox" name="Age" value="I have a bike" id="opt-3">
+                <label for="opt-3">I have a bike</label>
+                <input type="checkbox" name="Age" value="I have a boat" id="opt-4">
+                <label for="opt-4">I have a boat</label>
+            </p>
+
+            <input type="button" onclick="alert('I wrote this to appear whenever that chut button is pressed.')" value="Click Me!">
+
+            <br><br>
+
+            <label for="birthday">Enter your birth date:  </label>
+            <input type="date" name="birthday" id="birthday" required>
+
+            <br><br>
+
+            <label for="datemin">First time you entered a bar:  </label>
+            <input type="date" name="datemin" id="datemin" min="2007-07-24">
+
+            <label for="datemax">Last time you entered a bar:  </label>
+            <input type="date" name="datemax" id="datemax" max="2020-10-24">
+
+            <br><br>
+
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+            <br><br>
+
+            <label for="quantity">Quantity (between 1 and 5):</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+            <br><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="0" max="100" step="10" value="30">
+
+            <br><br>
+
+            <label for="vol">Volume (between 0 and 50):</label>
+            <input type="range" id="vol" name="vol" min="0" max="50">
+
+            <br><br>
+
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+
+            <!--Adding this separator comment.
+            SUBMIT
+            SUBMIT
+            SUBMIT
+            SUBMIT
+            All the input types should be added before this Submit form part is written.
+            SUBMIT
+            SUBMIT
+            SUBMIT
+            SUBMIT
+
+            -->
+            
+            <!--Adding this separator comment.
+            
+            Text below is going to be for the example of a Submit button on a form.
+            
+            -->
+
+            <br><br>
+
+            <input type="submit" value="Sumbmit the form">
+
+            <!--Adding this separator comment.
+            
+            Saved an image in the folder for what happens when a submit form button is clicked. 
+            File Name is 'Submit form example.jpeg'.
+            Note that the script has the password value saved. 
+            -->    
+
+            <input type="reset">
+
+        
+    </form>
+
+    
+
+</body>
+</html>
